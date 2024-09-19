@@ -1,0 +1,50 @@
+.search {
+  display: grid;
+  place-items: center;
+}
+
+.searchBar {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.search input {
+  width: 100%;
+
+  border: 1px solid hsl(0deg 0% 40% / 0.6);
+  border-radius: 8px;
+
+  color: hsl(0deg 0% 85%);
+  background-color: var(--background);
+
+  overflow: hidden;
+}
+
+.search button {
+  display: grid;
+  place-items: center;
+
+  width: 3.5rem;
+  aspect-ratio: 1 / 1;
+
+  border: 1px solid hsl(0deg 0% 40% / 0.6);
+  border-radius: 8px;
+
+  padding: 0;
+
+  color: hsl(0deg 0% 85%);
+  background-color: hsl(208 79.7% 51.8% / 0.1);
+
+  overflow: hidden;
+
+  transition: background-color 200ms;
+}
+
+.search button:hover {
+  background-color: hsl(208 79.7% 51.8% / 0.2);
+}
+
+.search svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
