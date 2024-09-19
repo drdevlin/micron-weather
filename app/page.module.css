@@ -1,4 +1,8 @@
 .main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr) minmax(0, 4fr);
   width: 100svw;
   height: 100svh;
+  padding: 1rem;
 }
