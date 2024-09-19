@@ -1,0 +1,6 @@
+.report {
+  display: grid;
+  place-items: center;
+  font-size: max(10rem, 25svmin);
+  font-weight: 100;
+}
