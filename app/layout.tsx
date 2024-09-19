@@ -1,5 +1,10 @@
+import { Kanit } from 'next/font/google';
+
 import type { Metadata } from "next";
+
 import "./globals.css";
+
+const kanit = Kanit({ weight: ['100', '300'], subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: "Micron Weather",
@@ -12,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={kanit.className}>
       <body>
         {children}
       </body>
