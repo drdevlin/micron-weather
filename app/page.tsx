@@ -2,7 +2,6 @@
 
 import { useFormState } from 'react-dom';
 import { getReport } from '@/app/actions';
-import { Background } from '@/components/Background';
 import { Search } from '@/components/Search';
 import { Report } from '@/components/Report';
 
@@ -17,7 +16,6 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <Background />
       <Search action={action} />
       <Report state={state} />
     </main>

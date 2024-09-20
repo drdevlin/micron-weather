@@ -1,4 +1,5 @@
 import { Kanit } from 'next/font/google';
+import { Background } from '@/components/Background';
 
 import type { Metadata } from "next";
 
@@ -19,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={kanit.className}>
       <body>
+        <Background />
         {children}
       </body>
     </html>
