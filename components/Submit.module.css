@@ -10,8 +10,8 @@
 
   padding: 0;
 
-  color: hsl(0deg 0% 85%);
-  background-color: hsl(208 79.7% 51.8% / 0.1);
+  color: hsl(0deg 0% 100% / 0.75);
+  background-color: hsl(var(--primary-hsl) / 0.1);
 
   overflow: hidden;
 
@@ -19,7 +19,7 @@
 }
 
 .submit:hover {
-  background-color: hsl(208 79.7% 51.8% / 0.2);
+  background-color: hsl(var(--primary-hsl) / 0.2);
 }
 
 .searchIcon {

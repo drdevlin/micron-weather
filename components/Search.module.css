@@ -8,13 +8,18 @@
   gap: 0.5rem;
 }
 
+.search label {
+  color: hsl(0deg 0% 100% / 0.75);
+}
+
 .search input {
   width: 100%;
 
   border: 1px solid hsl(0deg 0% 40% / 0.6);
   border-radius: 8px;
 
-  color: hsl(0deg 0% 85%);
+  color: hsl(0deg 0% 100% / 0.75);
+  background-color: hsl(var(--background-hsl) / 0.3);
 
   overflow: hidden;
 }

@@ -1,5 +1,6 @@
 :root {
-  --background: hsl(0deg 0% 5%);
+  --primary-hsl: 208 79.7% 51.8%;
+  --background-hsl: 0deg 0% 5%;
   --normal-size: 2rem;
   --normal-weight: 300;
   font-weight: var(--normal-weight);
@@ -16,7 +17,7 @@ body {
   display: grid;
   place-items: center;
   color: #ededed;
-  background: var(--background);
+  background: hsl(var(--background-hsl));
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
