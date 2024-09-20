@@ -1,5 +1,8 @@
 :root {
   --background: hsl(0deg 0% 5%);
+  --normal-size: 2rem;
+  --normal-weight: 300;
+  font-weight: var(--normal-weight);
 }
 
 html,
@@ -30,7 +33,8 @@ a {
 }
 
 label {
-  font-size: 2rem;
+  font-size: 1rem;
+  padding-inline-start: 0.9rem;
 }
 
 input, button {
@@ -41,6 +45,6 @@ input, button {
   color: inherit;
   background-color: transparent;
   font-family: inherit;
-  font-size: 2rem;
-  font-weight: 300;
+  font-size: var(--normal-size);
+  font-weight: var(--normal-weight);
 }
