@@ -1,7 +1,10 @@
 .blurPanel {
   z-index: -1;
   position: absolute;
-  inset: 0;
+  inset-inline-start: -100lvw;
+  inset-block-start: -100lvh;
+  width: 300lvw;
+  height: 300lvh;
   background-color: hsl(var(--background-hsl) / 0.5);
   backdrop-filter: blur(300px);
 }
@@ -9,8 +12,8 @@
 .floatingCircle {
   z-index: -1;
   position: absolute;
-  inset-inline-start: 15%;
-  inset-block-start: 15%;
+  inset-inline-start: 10lvw;
+  inset-block-start: 10lvh;
   width: 20rem;
   aspect-ratio: 1 / 1;
   border-radius: 9999px;
@@ -22,23 +25,23 @@
 
 @keyframes edge-walk {
   0% {
-    inset-inline-start: 10%;
-    inset-block-start: 10%;
+    inset-inline-start: 10lvw;
+    inset-block-start: 10lvh;
   }
   20% {
-    inset-inline-start: 75%;
-    inset-block-start: 10%;
+    inset-inline-start: 75lvw;
+    inset-block-start: 10lvh;
   }
   40% {
-    inset-inline-start: 75%;
-    inset-block-start: 75%;
+    inset-inline-start: 75lvw;
+    inset-block-start: 75lvh;
   }
   60% {
-    inset-inline-start: 10%;
-    inset-block-start: 75%;
+    inset-inline-start: 10lvw;
+    inset-block-start: 75lvh;
   }
   80% {
-    inset-inline-start: 10%;
-    inset-block-start: 10%;
+    inset-inline-start: 10lvw;
+    inset-block-start: 10lvh;
   }
 }
