@@ -50,3 +50,7 @@ input, button {
   font-size: var(--normal-size);
   font-weight: var(--normal-weight);
 }
+
+::placeholder {
+  color: hsl(0deg 0% 100% / 0.25);
+}
