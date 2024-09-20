@@ -1,6 +1,13 @@
 .report {
   display: grid;
   place-items: center;
-  font-size: max(10rem, 25svmin);
+}
+
+.error {
+  font-size: var(--normal-size);
+}
+
+.temperature {
+  font-size: 16rem;
   font-weight: 100;
 }
