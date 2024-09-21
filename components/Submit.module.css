@@ -20,6 +20,7 @@
 
 .submit:hover {
   background-color: hsl(var(--primary-hsl) / 0.2);
+  cursor: pointer;
 }
 
 .searchIcon {

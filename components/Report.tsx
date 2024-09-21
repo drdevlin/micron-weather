@@ -11,12 +11,12 @@ export interface ReportProps {
   state: ReportState;
 }
 export const Report = ({ state }: ReportProps) => {
-  const [error, temperature] = state;
+  const [error, weather] = state;
 
   return (
     <section className={styles.report} aria-live="polite">
       {error && <p className={styles.error}>{error}</p>}
-      {temperature && <p className={styles.temperature}>{temperature + '°'}</p>}
+      {weather?.temperature && <p className={styles.temperature}>{weather.temperature + '°'}</p>}
     </section>
   );
 };

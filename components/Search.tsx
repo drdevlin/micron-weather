@@ -10,8 +10,11 @@ export interface SearchProps {
   // It should fetch the current temperature
   // given a `city`.
   action: (payload: FormData) => void;
+  // The user's preferred city.
+  // Will only be used as the input's default value.
+  preferredCity?: string;
 }
-export const Search = ({ action }: SearchProps) => {
+export const Search = ({ action, preferredCity }: SearchProps) => {
   return (
     <section className={styles.search}>
 
@@ -23,6 +26,7 @@ export const Search = ({ action }: SearchProps) => {
             type="search"
             name="city"
             placeholder="Enter City"
+            defaultValue={preferredCity}
             title="City [State Code, Country Code]"
             aria-label="city"
           />
