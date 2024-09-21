@@ -15,5 +15,5 @@ export const usePreferredCity = (action: (payload: FormData) => void) => {
       formData.set('city', preferredCity);
       action(formData);
     })();
-  }, []);
+  }, [action]);
 };

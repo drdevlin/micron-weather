@@ -80,7 +80,7 @@ export const bookmarkCity = async (city: string) => {
   const { data, error } = fingerprint ? await update() : await insert();
 
   // On Error.
-  error && console.error(error);
+  if (error) console.error(error);
   if (!data) return false;
 
   // On Success.
@@ -96,7 +96,7 @@ export const getPreferredCity = async () => {
 
   const { data, error } = await supabase.from('users').select('preferred_city').eq('fingerprint', fingerprint?.value);
 
-  error && console.error(error);
+  if (error) console.error(error);
   if (!data) return;
 
   const [user] = data;
