@@ -15,8 +15,12 @@ export const Report = ({ state }: ReportProps) => {
 
   return (
     <section className={styles.report} aria-live="polite">
-      {error && <p className={styles.error}>{error}</p>}
-      {weather?.temperature && <p className={styles.temperature}>{weather.temperature + '°'}</p>}
+      {error && (
+        <p className={styles.error}>{error}</p>
+      )}
+      {weather?.temperature && (
+        <p className={styles.temperature}>{weather.temperature + '°'}</p>
+      )}
     </section>
   );
 };
