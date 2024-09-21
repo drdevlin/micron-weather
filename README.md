@@ -66,7 +66,7 @@ Modern look, nice typography, and a cool animated background.
 
 [Repo is connected to and deployed on Vercel.](https://micron-weather.vercel.app/)
 
-### Small backend
+### Small backend.
 
 The app uses [Server Actions](/app/actions.ts) for a backend. (Not REST)
 
